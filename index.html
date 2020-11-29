@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <div id="loading" class="loading">
+    <img src="./assets/Infinity-1s-200px.svg" alt="">
+  </div>
+  <div class="container">
+    <section class="first">
+      <div class="location">
+        <button class="search-places">search for places</button>
+        <button class="yr-location"><img src="./assets/gps_fixed-white-18dp.svg" alt=""></button>
+      </div>
+      <div  class="weather-img">
+        <img id="todayimg" src="./assets/Showers.png" alt="">
+      </div>
+      <div class="degree">
+        <span  class="first-num">
+          <span id="todayDegree">15</span>
+          <span class="signe">°C</span></span>
+      </div>
+      <div id="todayText" class="weather-text">Shower</div>
+      <div class="date" id='w-day'><span>Today</span><span>.</span><span id="todayDate"> Fri, 5 jun</span></div>
+      <div class="position"> <span id="loc-icon" class="material-icons">
+        location_on
+        </span><span id="city">Helsinki</span></div>
+    </section>
+
+    <section class="second">
+
+      <div class="second-container">
+
+         <!-- <div class="sf">
+          <div class="cel">°C</div>
+          <div class="fah">°F</div>
+        </div>  -->
+          
+          <div class="weakly-weather">
+            <div id="w-item" class="weakly-item">
+              <span id="w-day">Tomorrow</span>
+              <img id="w" src="./assets/Clear.png" alt="weather-img">
+              <span><span>16°C</span><span>11°C</span></span>
+            </div>
+            <div id="w-item"  class="weakly-item">
+              <span>Sun, 7 jun</span>
+              <img src="./assets/Hail.png" alt="weather-img">
+              <span><span>16°C</span><span>11°C</span></span>
+            </div>
+            <div id="w-item" class="weakly-item">
+              <span>Sun, 8 jun</span>
+              <img src="./assets/Showers.png" alt="weather-img">
+              <span><span>16°C</span><span>11°C</span></span>
+            </div>
+            <div id="w-item" class="weakly-item">
+              <span>Sun, 9 jun</span>
+              <img src="./assets/LightCloud.png" alt="weather-img">
+              <span><span>16°C</span><span>11°C</span></span>
+            </div>
+            <div id="w-item" class="weakly-item">
+              <span>Sun, 10 jun</span>
+              <img src="./assets/Snow.png" alt="weather-img">
+              <span><span>16°C</span><span>11°C</span></span>
+            </div>
+          </div>
+
+          <div class="midle-p">
+            <p class="midle-p">Today's Highlight</p>
+          </div>
+
+          <div class="todays-highlight">
+            <div class="hl ws">
+              <span class="ws-title">Wind status</span>
+              <span class="ws-number"><span id="ws" class="hg-number">7</span><span class="hg-symbol">mph</span></span>
+              <span>wsw</span>
+            </div>
+            <div class="hl humidity">
+              <span class="ws-title">Humidity</span>
+              <span class="ws-number"><span id="humidity" class="hg-number">84</span><span class="hg-symbol">%</span></span>
+              <div class="prgbar-container">
+                <div class="percentage">
+                  <span>0</span>
+                  <span>50%</span>
+                  <span>100%</span>
+                </div>
+                <div class="bar">
+                  <div class="inner-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="hl visibility">
+              <span class="ws-title">Visibility</span>
+              <span class="ws-number"><span id="visibility" class="hg-number">6,4</span><span class="hg-symbol">miles</span></span>
+            </div>
+            <div class="hl air-pressure">
+              <span class="ws-title">Air pressure</span>
+              <span class="ws-number"><span id="ap" class="hg-number">998</span><span class="hg-symbol">mb</span></span>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
